@@ -157,11 +157,11 @@ The funnel shows carts dying above roughly ₹40 in delivery fee, and it's tempt
 
 ### Problem Statement 3
 
-"When walk-in demand triples on weekend afternoons, small South-Indian restaurant partners want to accept only the delivery volume their single-line kitchens can actually fulfil, but the app gives them only a binary open/closed switch and then penalises them for cancelling — evidenced by a ≈22.7% weekend cancellation rate for South-Indian restaurants (vs ≈10.3% weekday) and the owner interview (Meera) describing 20-30% weekend cancellations, plus customer-side confirmation (Vikram) of those restaurants going 'temporarily closed' every Sunday."
+"When walk-in demand surges on weekend afternoons, small restaurant partners want to serve dine-in customers first and keep only limited kitchen bandwidth reserved for Zomato orders, but the app offers no way to do that — the only control is going fully offline — so they cancel instead and get hit with low-fulfilment penalties for it — evidenced by a ~22.7% weekend cancellation rate for South-Indian restaurants (vs ≈10.3% weekday) and the owner interview (Meera), who describes cancelling 20-30% of weekend orders, being marked 'low fulfillment' twice with visibility dropping and ratings suffering, and having her ratings drop anyway when she uses the offline switch — plus customer-side confirmation (Vikram) of those restaurants showing 'temporarily closed' every Sunday 12-3."
 
 ### Problem Statement 4
 
-"When a price-sensitive first-jobber in Mumbai reaches checkout, they want to know the all-in cost before investing time choosing a meal, but delivery fee, GST and handling charges only surface at the final step, pushing the total ~30% above the menu price — evidenced by cart completion collapsing from 78% (≤₹30 fee) to 32% (₹41-60) to 10% (>₹60), and the Priya interview describing a hard ~₹40 ceiling and a late fee reveal that 'feels like a trap'."
+"When a user with tight budget constraints wants to order, they choose items accordingly but when they reach the checkout page they see a price much higher after taxes and delivery and decide to not go ahead with the order — evidenced by cart completion collapsing from 78% (≤₹30 fee) to 32% (₹41-60) to 10% (>₹60), and the Priya interview describing a hard ~₹40 ceiling and a late fee reveal that 'feels like a trap'."
 
 ### Problem Statement 5
 
@@ -171,26 +171,21 @@ The funnel shows carts dying above roughly ₹40 in delivery fee, and it's tempt
 
 ## Section 5 — 4-Quadrant Map
 
-North Star for scoring: **repeat order rate / retention** (the founder's stated worry). Impact = how much solving this moves that. Feasibility = can a solution ship in 8-12 weeks.
-
 | # | Problem Statement (shortened) | Impact (1-5) | Feasibility (1-5) | Quadrant |
 | --- | --- | --- | --- | --- |
 | 1 | Bangalore 7-9 PM delivery runs ~2× the promised ETA | 5 | 4 | **SOLVE NOW** |
-| 2 | Gold value eroded silently → subscriber churn | 4 | 3 | STRATEGIC |
+| 2 | Gold value eroded silently -> subscriber churn | 4 | 3 | STRATEGIC |
 | 3 | Weekend cancellations from kitchen capacity limits | 3 | 4 | QUICK WIN |
-| 4 | Fees revealed late at checkout → cart abandonment | 4 | 4 | **SOLVE NOW** |
-| 5 | First-order failures → permanent one-and-done churn | 5 | 3 | STRATEGIC |
+| 4 | Fees revealed late at checkout -> cart abandonment | 4 | 4 | **SOLVE NOW** |
+| 5 | First-order failures -> permanent one-and-done churn | 5 | 3 | STRATEGIC |
 
-**Reasoning on the two harder calls:**
-- **Gold (STRATEGIC, not Solve Now):** high impact on revenue and advocacy, but the fix touches pricing, finance and eligibility policy across teams — hard to land cleanly in one quarter.
-- **First-order churn (STRATEGIC, not Solve Now):** arguably the highest impact of all, but reliably guaranteeing a great first order depends on first fixing the underlying delivery-time problem. It's downstream of #1, so it's a bet you set up rather than ship immediately.
 
 ### Quadrant Reference
 
-- **SOLVE NOW** — Impact 4-5, Feasibility 4-5 — Wk 1-12 MVP
-- **STRATEGIC BETS** — Impact 4-5, Feasibility 1-3 — investigate deeply
-- **QUICK WINS** — Impact 1-3, Feasibility 4-5 — batch for later polish
-- **AVOID** — Impact 1-3, Feasibility 1-3 — do not commit resources
+- **SOLVE NOW** : Impact 4-5, Feasibility 4-5 — Wk 1-12 MVP
+- **STRATEGIC BETS** : Impact 4-5, Feasibility 1-3 — investigate deeply
+- **QUICK WINS** : Impact 1-3, Feasibility 4-5 — batch for later polish
+- **AVOID** : Impact 1-3, Feasibility 1-3 — do not commit resources
 
 ---
 
@@ -198,11 +193,11 @@ North Star for scoring: **repeat order rate / retention** (the founder's stated 
 
 ### My chosen problem
 
-"When ordering dinner between 7-9 PM in Bangalore's high-density tech corridors (Whitefield, HSR, Koramangala), working professionals (25-35) want their food to arrive close to the promised ETA, but actual delivery runs roughly 2× the promise (≈61 min against a ~31 min promise) — evidenced by ~131 QuickBites orders in that window averaging 61 min vs ~31 min elsewhere, and 2/6 interviews (Rohan, Vikram) naming evening Bangalore delivery as their top pain, with cross-city corroboration from Anjali."
+"When ordering dinner between 7-9 PM in Bangalore's high-density tech corridors (Whitefield, HSR, Koramangala), working professionals (aged 25-35) want their food to arrive close to the promised ETA, but actual delivery runs roughly 2× the promise (≈61 min against a ~31 min promise) - evidenced by ~131 QuickBites orders in that window averaging 61 min vs ~31 min elsewhere, and 2/6 interviews (Rohan, Vikram) naming evening Bangalore delivery as their top pain."
 
 ### Why this one?
 
-It has the strongest triangulation of any candidate — the largest single data sample (~131 orders) and multiple independent interviews, including a 300+ order veteran (Vikram) who calls it "your bleeding wound" — so I'm most confident it's a real problem, not just an interesting one. It hits the North Star hardest, because evening dinner is the highest-frequency, highest-density ordering moment and it's where Zomato is already losing default status to Swiggy (Rohan checks Swiggy first now). And it's a prerequisite: fixing evening reliability also de-risks the first-order-churn problem, since a new user's first order is most likely to fail in exactly this window.
+It has the strongest triangulation of any candidate - the largest single data sample (~131 orders) and multiple independent interviews, including a 300+ order veteran (Vikram) who calls it "your bleeding wound". It is also a prerequisite: fixing evening reliability also de-risks the first-order-churn problem, since a new user's first order is most likely to fail in exactly this window.
 
 ### JTBD Statement
 
@@ -212,20 +207,5 @@ It has the strongest triangulation of any candidate — the largest single data 
 
 "As a WFH tech professional ordering dinner in Bangalore between 7-9 PM, I want the app's ETA to reflect real evening-rush conditions, so that I can decide with confidence instead of defaulting to Swiggy."
 
-### Notes on JTBD vs User Story
-
-The JTBD is keyed to the *situation* (post-work, hungry, evening rush), so it stays true even if the persona changes — a consultant or a student in that same moment has the same job. The user story is anchored to an identity ("WFH tech professional"), which is narrower and can quietly push you to over-fit a solution to one persona instead of solving for the moment.
-
 ---
-
-## Self-Check
-
-- All 6 sections have real content — yes
-- Every Section 1 quote is verbatim (pulled from transcripts, not the answer key) — yes
-- Every Section 2 theme has 3+ users — yes
-- Section 3 addresses all 5 data problems — yes
-- Problem statements have all 5 parts and cite both data and interviews — yes
-- No solutions proposed in the statements — yes
-- Section 5 scores and quadrants every problem — yes
-- Section 6 JTBD uses the "When [situation]..." structure — yes
 
