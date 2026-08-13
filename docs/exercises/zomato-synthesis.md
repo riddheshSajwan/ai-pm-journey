@@ -1,6 +1,6 @@
 # Zomato Synthesis
 
-## Section 1 — Quote Extraction
+## Section 1 - Quote Extraction
 
 Verbatim quotes from the 6 interviews - 
 
@@ -145,7 +145,7 @@ The funnel shows carts dying above roughly ₹40 in delivery fee, and it's tempt
 
 ---
 
-## Section 4 — Problem Statements
+## Section 4 - Problem Statements
 
 ### Problem Statement 1
 
@@ -169,7 +169,7 @@ The funnel shows carts dying above roughly ₹40 in delivery fee, and it's tempt
 
 ---
 
-## Section 5 — 4-Quadrant Map
+## Section 5 - 4-Quadrant Map
 
 | # | Problem Statement (shortened) | Impact (1-5) | Feasibility (1-5) | Quadrant |
 | --- | --- | --- | --- | --- |
@@ -189,7 +189,7 @@ The funnel shows carts dying above roughly ₹40 in delivery fee, and it's tempt
 
 ---
 
-## Section 6 — Chosen Problem + JTBD
+## Section 6 - Chosen Problem + JTBD
 
 ### My chosen problem
 
