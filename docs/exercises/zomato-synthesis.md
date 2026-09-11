@@ -1,8 +1,8 @@
 # Zomato Interview Synthesis — Wk 1 Extended Exercise
-**Student Name** : Riddhesh Sajwan 
+**Student Name** : Riddhesh Sajwan
 
 **Batch** : Aug-26 Date
- 
+
 **Submitted** : 13/08/2026 
 
 **GitHub file URL** : [zomato-synthesis.md](https://github.com/riddheshSajwan/ai-pm-journey/blob/main/docs/exercises/zomato-synthesis.md)
